@@ -39,12 +39,12 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 
 | Information       |               |         |       |                  |                |      |
 |-------------------|---------------|---------|-------|------------------|----------------|------|
-| option_id         | brand_name    | style   | color | engine           | transmiscion   | sold |
-| 1                 | Volkswagen    | 4 doors | black | 1.0L TSI         | 6-Speed Manual | yes  |
-| 2                 | Mercedes-Benz | SUV     | white | 2.0L Turbo       | 9G-TRONIC      | no   |
-| 3                 | Audi          | 4 doors | gray  | 1.4L TFSI        | S-Tronic       | no   |
-| 4                 | Mercedes-Benz | 4 doors | black | 2.0L Turbo       | 9G-TRONIC      | yes  |
-| 5                 | Mercedes-Benz | SUV     | black | 3.0L V6 Bi-Turbo | 9G-TRONIC      | yes  |
+| option_id         | model_id    | style   | color | engine           | transmiscion   | sold |
+| 1                 | BZNZ-0302S-1    | 4 doors | black | 1.0L TSI         | 6-Speed Manual | yes  |
+| 2                 | BZNZ-0303 | SUV     | white | 2.0L Turbo       | 9G-TRONIC      | no   |
+| 3                 | MVE-ST72          | 4 doors | gray  | 1.4L TFSI        | S-Tronic       | no   |
+| 4                 | DAF-FT3605DKZ | 4 doors | black | 2.0L Turbo       | 9G-TRONIC      | yes  |
+| 5                 | MAN-11.190HOCL-1 | SUV     | black | 3.0L V6 Bi-Turbo | 9G-TRONIC      | yes  |
 
 | Part              |                        |                 |               |            |                   |      |
 |-------------------|------------------------|-----------------|---------------|------------|-------------------|------|
