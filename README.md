@@ -46,14 +46,14 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | 4                 | DAF-FT3605DKZ | 4 doors | black | 2.0L Turbo       | 9G-TRONIC      | yes  |
 | 5                 | MAN-11.190HOCL-1 | SUV     | black | 3.0L V6 Bi-Turbo | 9G-TRONIC      | yes  |
 
-| Part              |                        |                 |               |            |                   |      |
-|-------------------|------------------------|-----------------|---------------|------------|-------------------|------|
-| part_id           | part_name              | manufactor_date | manufactor_id | factory_id | vin               | sold |
-| 1                 | Brake line             | 2022/12/30      | 1             | 1          | ABC12345678901234 | yes  |
-| 2                 | Brake line             | 2023/7/19       | 2             | 1          | DEF23456789012345 | no   |
-| 3                 | Air filter             | 2023/8/17       | 3             | 2          | GHI34567890123456 | no   |
-| 4                 | Spark plug line        | 2022/3/14       | 4             | 3          | HIJ56789012345678 | yes  |
-| 5                 | Air conditioner switch | 2023/2/27       | 5             | 4          | GHI34567890123456 | yes  |
+| Part    |                        |                 |               |            |                   |
+|---------|------------------------|-----------------|---------------|------------|-------------------|
+| part_id | part_name              | manufactor_date | manufactor_id | factory_id | vin               |
+| 1       | Brake line             | 2022/12/30      | 1             | NULL       | ABC12345678901234 |
+| 2       | Brake line             | 2023/7/19       | NULL          | 1          | DEF23456789012345 |
+| 3       | Air filter             | 2023/8/17       | NULL          | 2          | GHI34567890123456 |
+| 4       | spark plug line        | 2022/3/14       | 2             | NULL       | HIJ56789012345678 |
+| 5       | air conditioner switch | 2023/2/27       | 3             | NULL       | GHI34567890123456 |
 
 | Sales             |             |            |
 |-------------------|-------------|------------|
