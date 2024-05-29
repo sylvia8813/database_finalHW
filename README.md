@@ -22,7 +22,7 @@ new_env\Scripts\activate
 ```bash=
 deactivate
 ```
-2. 輸入
+2.輸入
 ```bash=
 pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 ```
@@ -45,7 +45,6 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | 3                 | Audi          | 4 doors | gray  | 1.4L TFSI        | S-Tronic       | no   |
 | 4                 | Mercedes-Benz | 4 doors | black | 2.0L Turbo       | 9G-TRONIC      | yes  |
 | 5                 | Mercedes-Benz | SUV     | black | 3.0L V6 Bi-Turbo | 9G-TRONIC      | yes  |
-| IJK67890123456789 | 5             | 6       | 6     | 2024/8/13        | 2000000        | yes  |
 
 | Part              |                        |                 |               |            |                   |      |
 |-------------------|------------------------|-----------------|---------------|------------|-------------------|------|
@@ -53,6 +52,49 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | 1                 | Brake line             | 2022/12/30      | 1             | 1          | ABC12345678901234 | yes  |
 | 2                 | Brake line             | 2023/7/19       | 2             | 1          | DEF23456789012345 | no   |
 | 3                 | Air filter             | 2023/8/17       | 3             | 2          | GHI34567890123456 | no   |
-| 4                 | spark plug line        | 2022/3/14       | 4             | 3          | HIJ56789012345678 | yes  |
-| 5                 | air conditioner switch | 2023/2/27       | 5             | 4          | GHI34567890123456 | yes  |
-| IJK67890123456789 | 5                      | 6               | 6             | 2024/8/13  | 2000000           | yes  |
+| 4                 | Spark plug line        | 2022/3/14       | 4             | 3          | HIJ56789012345678 | yes  |
+| 5                 | Air conditioner switch | 2023/2/27       | 5             | 4          | GHI34567890123456 | yes  |
+
+| Sales             |             |            |
+|-------------------|-------------|------------|
+| vin               | customer_id | sold_date  |
+| ABC12345678901234 | 762         | 2023/7/24  |
+| HIJ56789012345678 | 504         | 2023/8/14  |
+| GHI34567890123456 | 321         | 2023/12/21 |
+| IJK67890123456789 | 245         | 2023/4/15  |
+
+| Customer    	|        	|        	|              	|                         	|               	|
+|-------------	|--------	|--------	|--------------	|-------------------------	|---------------	|
+| customer_id 	| name   	| gender 	| phone        	| address                 	| annual_income 	|
+| 762         	| 王小明 	| male   	| 0912-345-678 	| 台北市信義區松高路123號 	| 550000        	|
+| 504         	| 陳美玲 	| female 	| 0921-234-567 	| 屏東縣屏東市民權路666號 	| 600000        	|
+| 321         	| 黃小菁 	| female 	| 0933-456-789 	| 台中市南屯區            	| 740000        	|
+| 245         	| 盧婷婷 	| female 	| 0944-567-890 	| 嘉義縣朴子市中華路555號 	| 590000        	|
+| 777         	| 周志明 	| male   	| 0911-234-567 	| 花蓮縣花蓮市中山路707號 	| 880000        	|
+
+| Dealer    	|                    	|              	|
+|-----------	|--------------------	|--------------	|
+| dealer_id 	| dealer_name        	| phone        	|
+| 1         	| 台灣汽車經銷商     	| 02-1234-5678 	|
+| 2         	| 台北汽車經銷商     	| 02-2345-6789 	|
+| 3         	| 台中汽車製造經銷商 	| 02-0123-4567 	|
+| 4         	| 桃園車業經銷商     	| 02-4567-8901 	|
+| 5         	| 新北汽車工業經銷商 	| 02-9012-3456 	|
+
+| Manufactor    	|                  	|                     	|            	|
+|---------------	|------------------	|---------------------	|------------	|
+| manufactor_id 	| manufactor_name  	| manufactor_lacation 	| activities 	|
+| 1             	| 台灣汽車零件公司 	| 台北市              	| 提供零部件 	|
+| 2             	| 台北車業         	| 台北市              	| 提供零部件 	|
+| 3             	| 南台汽車         	| 高雄市              	| 提供零部件 	|
+| 4             	| 台南汽車製造     	| 台南市              	| 製造汽車   	|
+| 5             	| 彰化汽車工廠     	| 彰化縣              	| 製造汽車   	|
+| 6             	| 高雄汽車生產     	| 高雄市              	| 製造汽車   	|
+
+| Supplier   |                  |
+|------------|------------------|
+| factory_id | supplier_name    |
+| 1          | 汽車零件之家     |
+| 2          | 訊發零件之家     |
+| 3          | 龍騰汽車零件公司 |
+| 4          | 光達汽車零件     |
