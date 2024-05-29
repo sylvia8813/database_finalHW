@@ -26,6 +26,13 @@ deactivate
 ```bash=
 pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 ```
+## ER-Model
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/251c6042-d76c-4aaf-8bf0-60d0867030e5)
+
+## Relation Schema
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/e6c83339-4d2f-4f79-aa7a-bc2a2c52b34b)
+
+
 ## Tables 內容說明
 | Vehicle           |           |               |           |             |            |      |
 |-------------------|-----------|---------------|-----------|-------------|------------|------|
@@ -98,3 +105,12 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | 2          | 訊發零件之家     |
 | 3          | 龍騰汽車零件公司 |
 | 4          | 光達汽車零件     |
+
+| Model          |                  |
+|----------------|------------------|
+| model_id       | brand_name       |
+| BZNZ-0302S-1   | 汽車零件之家     |
+| BZNZ-0303      | 訊發零件之家     |
+| MVE-ST72       | 龍騰汽車零件公司 |
+| DAF-FT3605DKZ  | 光達汽車零件     |
+| MAN-16.290HOCL | 輝煌汽車零件公司 |
