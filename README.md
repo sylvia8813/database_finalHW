@@ -4,10 +4,11 @@
 ## Server Tier 架設說明
 1. 先於mariaDB的官網下載並安裝
 2. 啟動MySQL server後，開啟HeidiSQL或MySQL，於左下角新增一個工作階段，右方參數設定完成後開啟。
-![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/31e0233e-5c8c-4da1-b2b1-86a8e886f74a)
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/af098fa2-4a77-42c9-a13a-1aa6385d37c0)
+
    ```bash=
    host="0.tcp.jp.ngrok.io",
-   port=15305, user="411062002",
+   port=11051, user="411062002",
    password="411062002",
    database="411062002"
    ```
