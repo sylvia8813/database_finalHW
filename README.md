@@ -36,17 +36,17 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 ## Tables 內容說明
 | Vehicle           |           |               |           |             |            |      |
 |-------------------|-----------|---------------|-----------|-------------|------------|------|
-| vin               | option_id | manufactor_id | dealer_id | import_date | salesprice | sold |
+| vin               | information_id | manufactor_id | dealer_id | import_date | salesprice | sold |
 | ABC12345678901234 | 1         | 1             | 1         | 2023/1/5    | 1000000    | yes  |
 | DEF23456789012345 | 1         | 2             | 2         | 2022/9/15   | 1200000    | no   |
-| GHI34567890123456 | 2         | 3             | 3         | 2023/3/25   | 1100000    | no   |
+| GHI21367890123456 | 2         | 3             | 3         | 2023/3/25   | 1100000    | no   |
 | HIJ56789012345678 | 3         | 4             | 4         | 2023/5/1    | 1200000    | yes  |
 | GHI34567890123456 | 4         | 5             | 5         | 2024/4/19   | 1500000    | yes  |
 | IJK67890123456789 | 5         | 6             | 6         | 2024/8/13   | 2000000    | yes  |
 
 | Information       |               |         |       |                  |                |      |
 |-------------------|---------------|---------|-------|------------------|----------------|------|
-| option_id         | model_id    | style   | color | engine           | transmiscion   | sold |
+| information_id         | model_id    | style   | color | engine           | transmiscion   | sold |
 | 1                 | BZNZ-0302S-1    | 4 doors | black | 1.0L TSI         | 6-Speed Manual | yes  |
 | 2                 | BZNZ-0303 | SUV     | white | 2.0L Turbo       | 9G-TRONIC      | no   |
 | 3                 | MVE-ST72          | 4 doors | gray  | 1.4L TFSI        | S-Tronic       | no   |
@@ -60,7 +60,7 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | 2       | Brake line             | 2023/7/19       | NULL          | 1          | DEF23456789012345 |
 | 3       | Air filter             | 2023/8/17       | NULL          | 2          | GHI34567890123456 |
 | 4       | spark plug line        | 2022/3/14       | 2             | NULL       | HIJ56789012345678 |
-| 5       | air conditioner switch | 2023/2/27       | 3             | NULL       | GHI34567890123456 |
+| 5       | transmission | 2023/2/27       | 3             | NULL       | GHI34567890123456 |
 
 | Sales             |             |            |
 |-------------------|-------------|------------|
@@ -98,7 +98,7 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | 5             	| 彰化汽車工廠     	| 彰化縣              	| 製造汽車   	|
 | 6             	| 高雄汽車生產     	| 高雄市              	| 製造汽車   	|
 
-| Supplier   |                  |
+| Factory   |                  |
 |------------|------------------|
 | factory_id | supplier_name    |
 | 1          | 汽車零件之家     |
