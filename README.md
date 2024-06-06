@@ -2,7 +2,7 @@
 請參考以下介紹：
 * 112-2 資料庫期末作業
 * 組員:411062002 談宇容 411177031 賴筱喻
-* [drawIO連結]:([連結URL](https://app.diagrams.net/#G1emgOCUDBWB16XVIx5O_L9qCvPxniMgpd#%7B%22pageId%22%3A%22C4QuysUeD1VVTYGyl3W3%22%7D))
+* drawIO連結
 * https://app.diagrams.net/#G1emgOCUDBWB16XVIx5O_L9qCvPxniMgpd#%7B%22pageId%22%3A%22C4QuysUeD1VVTYGyl3W3%22%7D
 
 
