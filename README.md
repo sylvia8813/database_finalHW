@@ -1,6 +1,7 @@
 # database_finalHW
 請參考以下介紹：
 112-2 資料庫期末作業
+組員:411062002 談宇容 411177031 賴筱喻
 使用HeisiSQL的資料庫管理工具
 ## Server Tier 架設說明
 1. 先於mariaDB的官網下載並安裝
