@@ -29,10 +29,13 @@ deactivate
 pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 ```
 ## ER-Model
-![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/251c6042-d76c-4aaf-8bf0-60d0867030e5)
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/2fb1b17f-d49a-4135-bf43-57dccf6ffe7f)
+
+
 
 ## Relation Schema
-![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/e6c83339-4d2f-4f79-aa7a-bc2a2c52b34b)
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/2078abcd-8e0d-4de4-97bd-073ab7843741)
+
 
 
 ## Tables 內容說明
@@ -127,6 +130,7 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 
 ```bash=
 ```
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/0ec85abc-5178-4b84-8c41-8e3391112131)
 
 2. Find the dealer who has sold the most (by dollar-amount) in the past year.
 ```bash=
