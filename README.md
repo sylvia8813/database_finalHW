@@ -57,7 +57,7 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | 3       | Air filter             | 2023/8/17       | NULL          | 2          | GHI34567890123456 |
 | 4       | spark plug line        | 2022/3/14       | 2             | NULL       | HIJ56789012345678 |
 | 5       | transmission           | 2023/2/27       | 3             | NULL       | GHI34567890123456 |
-| 6       | transmission           | 2022/1/20       | NULL          | 4          | IJK67890123456789 |
+| 6       | transmission           | 2023/1/20       | NULL          | 4          | IJK67890123456789 |
 
 | Salesrecord       |             |            |
 |-------------------|-------------|------------|
@@ -102,9 +102,9 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 |------------|------------------|
 | factory_id | supplier_name    |
 | 1          | 汽車零件之家     |
-| 2          | Getrag          |
+| 2          | 光達汽車零件     |
 | 3          | 龍騰汽車零件公司 |
-| 4          | 光達汽車零件     |
+| 4          | Getrag          |
 
 | Model          |                  |
 |----------------|------------------|
