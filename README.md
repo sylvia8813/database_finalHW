@@ -1,4 +1,5 @@
 # database_finalHW
+請參考以下介紹：
 112-2 資料庫期末作業
 使用HeisiSQL的資料庫管理工具
 ## Server Tier 架設說明
@@ -35,24 +36,15 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 
 
 ## Tables 內容說明
-| Vehicle           |           |               |           |             |            |      |
-|-------------------|-----------|---------------|-----------|-------------|------------|------|
-| vin               | information_id | manufactor_id | dealer_id | import_date | salesprice | sold |
-| ABC12345678901234 | 1         | 1             | 1         | 2023/1/5    | 1000000    | yes  |
-| DEF23456789012345 | 1         | 2             | 2         | 2022/9/15   | 1200000    | no   |
-| GHI21367890123456 | 2         | 3             | 3         | 2023/3/25   | 1100000    | no   |
-| HIJ56789012345678 | 3         | 4             | 4         | 2023/5/1    | 1200000    | yes  |
-| GHI34567890123456 | 4         | 5             | 5         | 2024/4/19   | 1500000    | yes  |
-| IJK67890123456789 | 5         | 6             | 6         | 2024/8/13   | 2000000    | yes  |
-
-| Information       |               |         |       |                  |                |      |
-|-------------------|---------------|---------|-------|------------------|----------------|------|
-| information_id         | model_id    | style   | color | engine           | transmiscion   | sold |
-| 1                 | BZNZ-0302S-1    | 4 doors | black | 1.0L TSI         | 6-Speed Manual | yes  |
-| 2                 | BZNZ-0303 | SUV     | white | 2.0L Turbo       | 9G-TRONIC      | no   |
-| 3                 | MVE-ST72          | 4 doors | gray  | 1.4L TFSI        | S-Tronic       | no   |
-| 4                 | DAF-FT3605DKZ | 4 doors | black | 2.0L Turbo       | 9G-TRONIC      | yes  |
-| 5                 | MAN-11.190HOCL-1 | SUV     | black | 3.0L V6 Bi-Turbo | 9G-TRONIC      | yes  |
+| Vehicle           |                |               |             |            |            |                  |       |                |         |
+|:-----------------:|:--------------:|:-------------:|:-----------:|:----------:|:----------:|:----------------:|:-----:|:--------------:|:-------:|
+| vin               | model_id       | manufactor_id | import_date | sold_date  | salesprice | engine           | color | transmission   | style   |
+| ABC12345678901234 | BZNZ-0302S-1   | 1             | 2023/1/5    | 2023/7/24  | 1000000    | 1.0L TSI         | black | 6-Speed Manual | 4 doors |
+| DEF23456789012345 | BZNZ-0303      | 2             | 2022/9/15   | 2023/1/30  | 1200000    | 2.0L Turbo       | white | 9G-TRONIC      | SUV     |
+| GHI21367890123456 | MVE-ST72       | 3             | 2023/3/25   | 2024/4/20  | 1100000    | 1.4L TFSI        | gray  | S-Tronic       | 4 doors |
+| HIJ56789012345678 | DAF-FT3605DKZ  | 4             | 2023/5/1    | 2023/8/14  | 1200000    | 2.0L Turbo       | black | 9G-TRONIC      | 4 doors |
+| GHI34567890123456 | MAN-16.290HOCL | 5             | 2023/4/19   | 2023/12/21 | 1500000    | 3.0L V6 Bi-Turbo | black | 9G-TRONIC      | SUV     |
+| IJK67890123456789 | BZNZ-0302S-1   | 6             | 2022/8/13   | 2023/4/15  | 2000000    | 1.0L TSI         | white | S-Tronic       | SUV     |
 
 | Part    |                        |                 |               |            |                   |
 |---------|------------------------|-----------------|---------------|------------|-------------------|
@@ -61,15 +53,18 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | 2       | Brake line             | 2023/7/19       | NULL          | 1          | DEF23456789012345 |
 | 3       | Air filter             | 2023/8/17       | NULL          | 2          | GHI34567890123456 |
 | 4       | spark plug line        | 2022/3/14       | 2             | NULL       | HIJ56789012345678 |
-| 5       | transmission | 2023/2/27       | 3             | NULL       | GHI34567890123456 |
+| 5       | transmission           | 2023/2/27       | 3             | NULL       | GHI34567890123456 |
+| 6       | transmission           | 2022/1/20       | NULL          | 4          | IJK67890123456789 |
 
-| Sales             |             |            |
+| Salesrecord       |             |            |
 |-------------------|-------------|------------|
 | vin               | customer_id | sold_date  |
 | ABC12345678901234 | 762         | 2023/7/24  |
 | HIJ56789012345678 | 504         | 2023/8/14  |
 | GHI34567890123456 | 321         | 2023/12/21 |
 | IJK67890123456789 | 245         | 2023/4/15  |
+| DEF23456789012345 | 777         | 2023/1/30  |
+| GHI21367890123456 | 432         | 2024/4/20  |
 
 | Customer    	|        	|        	|              	|                         	|               	|
 |-------------	|--------	|--------	|--------------	|-------------------------	|---------------	|
@@ -79,6 +74,7 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | 321         	| 黃小菁 	| female 	| 0933-456-789 	| 台中市南屯區            	| 740000        	|
 | 245         	| 盧婷婷 	| female 	| 0944-567-890 	| 嘉義縣朴子市中華路555號 	| 590000        	|
 | 777         	| 周志明 	| male   	| 0911-234-567 	| 花蓮縣花蓮市中山路707號 	| 880000        	|
+| 432         	| 陳明志 	| male   	| 0911-111-222 	| 台北市中山區中正路123號 	| 900000        	|
 
 | Dealer    	|                    	|              	|
 |-----------	|--------------------	|--------------	|
@@ -103,7 +99,7 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 |------------|------------------|
 | factory_id | supplier_name    |
 | 1          | 汽車零件之家     |
-| 2          | 訊發零件之家     |
+| 2          | Getrag          |
 | 3          | 龍騰汽車零件公司 |
 | 4          | 光達汽車零件     |
 
@@ -115,3 +111,74 @@ pip3 install mysql.connector mariadb (或pip install mysql.connector mariadb
 | MVE-ST72       | 龍騰汽車零件公司 |
 | DAF-FT3605DKZ  | 光達汽車零件     |
 | MAN-16.290HOCL | 輝煌汽車零件公司 |
+
+| Inventory          |            |              |   |
+|--------------------|------------|--------------|---|
+| vin                | dealer_id  | import_date  |   |
+| ABC12345678901234  | 2          | 2023/1/5     |   |
+| DEF23456789012345  | 1          | 2022/9/15    |   |
+| GHI21367890123456  | 3          | 2023/3/25    |   |
+| HIJ56789012345678  | 1          | 2023/5/1     |   |
+| GHI34567890123456  | 4          | 2023/4/19    |   |
+| IJK67890123456789  | 5          | 2022/8/13    |   |
+
+## Query的SQL語法如下
+1. Suppose that it is found that transmissions made by supplier Getrag between two given dates are defective. Find the VIN of each car containing such a transmission and the customer to which it was sold. If your design allows, suppose the defective transmissions all come from only one of Getrag’s plants.
+
+```bash=
+```
+
+2. Find the dealer who has sold the most (by dollar-amount) in the past year.
+```bash=
+SELECT d.dealer_name, SUM(v.salesprice) AS total_sales
+FROM Vehicle v
+JOIN Salesrecord s ON v.vin = s.vin
+JOIN Inventory i ON v.vin = i.vin
+JOIN Dealer d ON i.dealer_id = d.dealer_id
+WHERE
+    s.sold_date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND CURDATE()
+GROUP BY d.dealer_name
+ORDER BY total_sales DESC
+LIMIT 1;
+```
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/7459397f-8767-43b4-a68f-a544a61f98e8)
+
+3. Find the top 2 brands by unit sales in the past year
+```bash=
+SELECT m.brand_name, COUNT(v.vin) AS unit_sales
+FROM Vehicle v
+JOIN Model m ON v.model_id = m.model_id
+JOIN Salesrecord s ON v.vin = s.vin
+WHERE s.sold_date BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+     AND CURDATE()
+GROUP BY m.brand_name
+ORDER BY unit_sales DESC
+LIMIT 2;
+```
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/5b280f0e-95b8-44be-b327-6fcc00887324)
+
+4. In what month(s) do SUVs sell best?
+```bash=
+SELECT MONTH(s.sold_date) AS sale_month, COUNT(v.vin) AS suv_sales
+FROM Vehicle v
+JOIN Salesrecord s ON v.vin = s.vin
+WHERE v.style = 'SUV'
+GROUP BY MONTH(s.sold_date)
+ORDER BY suv_sales DESC
+LIMIT 1;
+```
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/4ed3a285-3ede-4fc9-ae63-d1aad7037546)
+
+5. Find those dealers who keep a vehicle in inventory for the longest average time. 
+```bash=
+SELECT d.dealer_name,
+       AVG(DATEDIFF(CURDATE(), i.import_date)) AS average_inventory_time
+FROM Vehicle v
+JOIN Inventory i ON v.vin = i.vin
+JOIN Dealer d ON i.dealer_id = d.dealer_id
+GROUP BY d.dealer_id, d.dealer_name
+ORDER BY average_inventory_time DESC
+LIMIT 1;
+```
+![image](https://github.com/sylvia8813/database_finalHW/assets/145385712/2f3b7e28-545d-4ff3-b4be-eeca7dfc02e7)
